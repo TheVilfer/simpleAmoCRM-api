@@ -14,6 +14,6 @@
   "author": "Vilfer",
   "license": "ISC",
   "dependencies": {
-    "simplemongo-api": "^1.0.3"
+    "simplemongo-api": "^1.0.4"
   }
 }
