@@ -50,7 +50,7 @@ module.exports.Init = async (collection, id) => {
 module.exports.Request = async (url, data) => {
   try {
     return (
-      await fetch(`https://${IND_DOMAIN}zerokelvin1.amocrm.ru` + url, {
+      await fetch(`https://${IND_DOMAIN}.amocrm.ru` + url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -68,7 +68,7 @@ module.exports.Request = async (url, data) => {
 module.exports.Get = async (url) => {
   try {
     return (
-      await fetch(`https://${IND_DOMAIN}zerokelvin1.amocrm.ru` + url, {
+      await fetch(`https://${IND_DOMAIN}.amocrm.ru` + url, {
         method: "GET",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -85,7 +85,7 @@ module.exports.Get = async (url) => {
 module.exports.Patch = async (url, data) => {
   try {
     return (
-      await fetch(`https://${IND_DOMAIN}zerokelvin1.amocrm.ru` + url, {
+      await fetch(`https://${IND_DOMAIN}.amocrm.ru` + url, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -96,6 +96,6 @@ module.exports.Patch = async (url, data) => {
     ).json();
   } catch (error) {
     console.error(error);
-    throw new Error("Request(POST) fail: " + error);
+    throw new Error("Request(PATCH) fail: " + error);
   }
 };
