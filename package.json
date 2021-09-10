@@ -1,5 +1,5 @@
 {
-  "name": "amocrm-api",
+  "name": "simpleamocrm-api",
   "version": "1.0.1",
   "description": "Api for use AmoCRM",
   "main": "index.js",
