@@ -1,3 +1,4 @@
+require('dotenv').config();
 const fetch = require("node-fetch");
 const DbCore = require("simplemongo-api");
 let Tokens = {
